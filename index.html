@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recycling And Desing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: url('logo.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            animation: slideDown 1s ease-out;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 0.5rem;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        .hero {
+            background: rgba(0, 0, 0, 0.7);
+            height: 300px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            animation: zoomIn 1.2s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 1rem;
+            border-radius: 8px;
+            animation: fadeIn 2s ease-in;
+        }
+
+        .section {
+            padding: 2rem;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            margin: 1rem auto;
+            border-radius: 8px;
+            max-width: 80%;
+            animation: fadeInUp 1s ease-in;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            animation: fadeInUp 1.2s ease-in;
+        }
+
+        form label {
+            text-align: left;
+            margin-bottom: 0.5rem;
+        }
+
+        form input, form textarea {
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+        }
+
+        form input:focus, form textarea:focus {
+            border-color: #007bff;
+        }
+
+        form button {
+            padding: 0.5rem;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        form button:hover {
+            background-color: #555;
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            animation: fadeIn 2s ease-in;
+        }
+
+        /* Animaciones */
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Bienvenido a Recycling And Desing</h1>
+    </header>
+
+    <!-- Navegación -->
+    <nav>
+        <a href="#productos">Productos</a>
+        <a href="#sobre-nosotros">Sobre Nosotros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- Sección Hero -->
+    <div class="hero">
+        <h1>Aqui encontraras nuestros trabajos</h1>
+    </div>
+
+    <!-- Sección Productos -->
+    <section id="productos" class="section">
+        <h2>Nuestros productos</h2>
+        <div class="gallery">
+            <img src="producto 1.jpg" alt="Producto 1">
+            <img src="producto 2.jpg" alt="Producto 2">
+            <img src="producto 3.jpg" alt="Producto 3">
+            <img src="producto 4.png" alt="Producto 4">
+            <img src="producto 5.png" alt="Producto 5">
+            <img src="producto 6.png" alt="Producto 6">
+        </div>
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="sobre-nosotros" class="section">
+        <h2>Sobre Nosotros</h2>
+        <p>Nosotros como jóvenes emprendedores, teníamos la visión de un mundo donde los residuos se convierten en recursos valiosos. En 2024, decidimos convertir nuestro sueño en realidad y fundamos Recycling and Design.</p>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="section">
+        <h2>Contáctanos</h2>
+        <div class="form-container">
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Reycling And Desing. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
